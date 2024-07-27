@@ -327,8 +327,26 @@
 //         console.log("Bu son massivda yo'q");
 //     }
 // }
-// arrFunc(numbers);
+// arrFunc(numbers)
 
 
 
 // ==========> 5 - masala <==========
+
+let arr = [1, 2, 3, 4, 5];
+
+let max1 = arr[0];
+let max2 = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max1) {
+        max2 = max1;
+        max1 = arr[i];
+    } else if (arr[i] > max2) {
+        max2 = arr[i];
+    }
+}
+
+let maxSum = max1 + max2 ;
+
+console.log(maxSum);
